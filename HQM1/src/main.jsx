@@ -1,7 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import ElectricBikeWebsite from './App.jsx'
+import ElectricBikeWebsite from './ElectricBikeWebsite'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
