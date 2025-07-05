@@ -1,4 +1,4 @@
-import {teamdata} from '../constants.js'
+import {teamdata} from '../constant/teamdata.js'
 const  getTeamData = (req,res)=>{
     try {
     res.json({

@@ -1,19 +1,19 @@
 export const  teamdata = [
    {
-  name: "Ananya Roy",
-  college: "Asansol Engineering College",
-  department: "Electrical Engineering",
-  phone: "+91-9876543222",
-  email: "ananya.roy@example.com",
-  image: "/ananya.jpg", // Place 'ananya.jpg' inside /public
-  projectRole: "Embedded Systems Engineer",
+  name: "Nurhak Mondal",
+  college: "Institute of Engineering and Management",
+  department: "Electronics & Communication Engineering",
+  phone: "7063694560",
+  email: "mondalnur@gmail.com",
+  image: "/Nurhak.jpg",
+  projectRole: "Project Lead",
   specialization: "Battery Design, PCB Development, IoT Sensors"
 },
 {
-  name: "Ritvik Sharma",
-  college: "Heritage Institute of Technology",
-  department: "Mechanical Engineering",
-  phone: "+91-9876543233",
+  name: "Sombit Biswas",
+  college: "Institute of Engineering and Management",
+  department: "Infromation Technology",
+  phone: "8420077098",
   email: "ritvik.sharma@example.com",
   image: "/sougata.jpg", // Place 'ritvik.jpg' inside /public
   projectRole: "Mechanical Design Lead",
