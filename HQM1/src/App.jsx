@@ -1,24 +1,27 @@
+
 import React, { useState } from 'react';
 import Navbar from './components/common/Navbar/navbar';
-import Home from './pages/Home/Home';
-import Team from './pages/Team/Team';
-import Project from './pages/Project/Project';
-import Contact from './pages/Contact/Contact';
-import ChatBot from './components/ui/ChatBot/ChatBot';
+import HomePage from './pages/Home/Home';
+import TeamPage from './pages/Team/Team';
+import ContactPage from './pages/Contact/Contact';
+import ProjectPage from './pages/Project/Project';
+import Chatbot from './components/ui/ChatBot/ChatBot';
+
+
 
 const App = () => {
   const [currentSection, setCurrentSection] = useState('home');
-
+  // Render current section
   const renderCurrentSection = () => {
     switch (currentSection) {
       case 'team':
-        return <Team />;
+        return <TeamPage />;
       case 'project':
-        return <Project />;
+        return <ProjectPage />;
       case 'contact':
-        return <Contact />;
+        return <ContactPage />;
       default:
-        return <Home />;
+        return <HomePage />;
     }
   };
 
@@ -26,7 +29,7 @@ const App = () => {
     <div className="relative">
       <Navbar currentSection={currentSection} setCurrentSection={setCurrentSection} />
       {renderCurrentSection()}
-      <ChatBot />
+      <Chatbot />
     </div>
   );
 };
