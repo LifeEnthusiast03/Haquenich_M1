@@ -5,7 +5,7 @@ import HomePage from './pages/Home/Home';
 import TeamPage from './pages/Team/Team';
 import ContactPage from './pages/Contact/Contact';
 import ProjectPage from './pages/Project/Project';
-import Chatbot from './components/ui/ChatBot/ChatBot';
+import ElectricBikeChatbot from './components/ui/ChatBot/ChatBot';
 
 
 
@@ -29,7 +29,7 @@ const App = () => {
     <div className="relative">
       <Navbar currentSection={currentSection} setCurrentSection={setCurrentSection} />
       {renderCurrentSection()}
-      <Chatbot />
+      <ElectricBikeChatbot/>
     </div>
   );
 };

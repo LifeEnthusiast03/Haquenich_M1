@@ -4,6 +4,7 @@ import dotenv from 'dotenv'
 import {createServer} from 'http'
 import teamroute from './route/teamroute.js'
 import contactroute from './route/contactroute.js'
+import chatroute from './route/chatroute.js'
 
 dotenv.config();
 
@@ -22,7 +23,7 @@ app.use(express.json());
 
 app.use('/api/team',teamroute)
 app.use('/api/contact-us',contactroute);
-
+app.use('/api/chat',chatroute);
 //home route
 app.get('/',(req,res)=>{
     res.send("This is the home page");
